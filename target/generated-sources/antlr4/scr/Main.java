@@ -107,6 +107,7 @@ public class Main {
 		btnArbol.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				textArea.setText("");
+				  @SuppressWarnings("deprecation")
 				  ANTLRInputStream input = new ANTLRInputStream(ingresarTexto.getText());
 				  lexer  = new decafLexer(input);
 			      TokenStream tokenStream = new CommonTokenStream(lexer);
